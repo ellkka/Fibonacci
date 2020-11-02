@@ -1,6 +1,10 @@
+package md.roadmap;
+
 public class Fibonacci {
 
-    protected int fibonacciIterative(int number){
+    public final int DEFAULT_NUMBER = 10;
+
+    public int fibonacciIterative(int number){
 
         int prepreNumber, preNumber = 0, currentNumber = 1;
 
@@ -11,10 +15,11 @@ public class Fibonacci {
             currentNumber = prepreNumber + preNumber;
 
         }
+
         return  currentNumber;
 
     }
-    protected int fibonacciRecursion(int number) {
+    public int fibonacciRecursion(int number) {
         //use recursion
         if (number == 0) {
 
